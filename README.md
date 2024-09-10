@@ -1,0 +1,1 @@
+# vsquad-school
