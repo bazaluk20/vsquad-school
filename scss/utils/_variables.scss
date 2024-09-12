@@ -1,0 +1,21 @@
+:root {
+  --color-brand-primary: #2280cd;
+  --color-brand-secondary: #3e94da;
+  --color-white: #fff;
+  --color-dark: #18171c;
+
+  --color-medium-dark: #272528;
+  --color-light-description: #ccc; /* #d1d1d2 */
+  --color-light: #fafafa; /* #fcfcfc // #f3f3f3 // #fbfafa */
+
+  --color-secondary-dark: #3e3c40;
+  --color-decor: #1468ad;
+
+  --color-light-dark: #737373;
+
+  --color-policy-text: #5b5b5b;
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desctop: 1140px;

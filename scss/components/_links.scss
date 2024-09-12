@@ -1,0 +1,35 @@
+.link {
+  position: relative;
+  color: var(--color-white);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.13;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.25s;
+}
+
+.link:hover {
+  color: var(--color-brand-primary);
+}
+
+.link::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--color-brand-primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

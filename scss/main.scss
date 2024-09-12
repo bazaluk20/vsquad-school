@@ -1,1 +1,21 @@
-@import "./utils/fonts";
+@import './utils/fonts';
+@import './utils/texts';
+@import './utils/utils';
+@import './utils/variables';
+@import './base';
+
+@import './components/buttons';
+@import './components/links';
+@import './components/dropdown';
+@import './components/social';
+
+@import './layout/containers';
+@import './layout/header';
+@import './layout/first-screen';
+@import './layout/our-cources';
+@import './layout/who-is';
+@import './layout/price';
+@import './layout/faq';
+@import './layout/contacts';
+@import './layout/subscribe';
+@import './layout/footer';
