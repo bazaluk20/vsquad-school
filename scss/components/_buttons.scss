@@ -1,9 +1,28 @@
-.btn-primary {
-  color: var(--color-white);
-  background-color: var(--color-brand-primary);
-  border: none;
-  padding: 14px 32px;
+.btn-primary,
+.btn-transparent,
+.btn-disabled {
+  text-align: center;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-primary {
+  color: coloring(color-white);
+  background-color: coloring(color-brand-primary);
+  border: 1px solid coloring(color-brand-primary);
+}
+
+.btn-transparent {
+  color: coloring(color-brand-primary);
+  border: 1px solid coloring(color-brand-primary);
+  background-color: coloring(color-brand-primary, 0.15);
+}
+
+.btn-disabled {
+  color: coloring(color-disabled);
+  background-color: coloring(color-light-dark, 0.15);
+  border: 1px solid coloring(color-light-dark);
+  cursor: not-allowed;
 }

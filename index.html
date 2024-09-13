@@ -126,7 +126,7 @@
                   Досвідчені художники можуть здобути нові навички та підвищити
                   свій професійний рівень у нових напрямках.
                 </p>
-                <button class="btn-primary" type="button">
+                <button class="first-screen__btn btn-primary" type="button">
                   Почати навчання
                 </button>
               </div>
@@ -134,81 +134,89 @@
           </div>
         </div>
       </section>
-      <section class="our-cources">
+      <section class="our-cources section">
         <div class="container">
-          <h2>НАШІ КУРСИ</h2>
-          <p>
+          <h2 class="section__heading section__heading--light">НАШІ КУРСИ</h2>
+          <p class="section__description section__description--light">
             Ознайомся нашими курсами та обери собі варіант, що личить твоїм
             скілам та інтересам.
           </p>
           <div class="our-cources__content">
-            <div class="our-cources__item course">
-              <div class="course__content">
-                <h3>3D Artist: modelling</h3>
-                <p class="course__for">Для початківців</p>
-                <p class="course__description">
-                  Дізнайся всі секрети 3D моделювання та вдосконалюй свої
-                  навички створювати дивовижні тривимірні об'єкти на прикладі
-                  меча.
-                </p>
-              </div>
-              <div class="course__wrapper-btn">
-                <a class="course__btn course__btn--more" href="#">
-                  Дізнатись більше
-                </a>
-                <a class="course__btn course__btn--letsgo" href="#">
-                  Почати навчання
-                </a>
-              </div>
-            </div>
-            <div class="our-cources__item course">
-              <div class="course__content">
-                <h3>3D Artist: texturing</h3>
-                <p class="course__for">Для загартованих</p>
-                <p class="course__description">
-                  Отримай знання, які дозволять тобі виділитися серед інших і
-                  стати справжнім професіоналом у 3D текстуруванні.
-                </p>
-              </div>
-              <div class="course__wrapper-btn">
-                <a class="course__btn course__btn--more" href="#">
-                  Дізнатись більше
-                </a>
-                <a class="course__btn course__btn--letsgo" href="#">
-                  Почати навчання
-                </a>
+            <div class="our-cources__item cource cource--modelling">
+              <div class="cource__wrapper cource__wrapper--modelling">
+                <div class="cource__content">
+                  <h3 class="cource__heading">3D Artist: modelling</h3>
+                  <p class="cource__for">Для початківців</p>
+                  <p class="cource__description">
+                    Дізнайся всі секрети 3D моделювання та вдосконалюй свої
+                    навички створювати дивовижні тривимірні об'єкти на прикладі
+                    меча.
+                  </p>
+                </div>
+                <div class="cource__wrapper-btn">
+                  <a class="cource__btn btn-primary" href="#">
+                    Дізнатись більше
+                  </a>
+                  <a class="cource__btn btn-transparent" href="#">
+                    Почати навчання
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="our-cources__item course">
-              <div class="course__content">
-                <h3>3D Artist: character</h3>
-                <p class="course__for">Для загартованих</p>
-                <p class="course__description">
-                  Навчись мистецтву створювати незабутніх персонажів. Курс
-                  допоможе тобі опанувати навички стилізованого моделювання.
-                </p>
+            <div class="our-cources__item cource cource--texturing">
+              <div class="cource__wrapper cource__wrapper--texturing">
+                <div class="cource__content">
+                  <h3 class="cource__heading">3D Artist: texturing</h3>
+                  <p class="cource__for">Для загартованих</p>
+                  <p class="cource__description">
+                    Отримай знання, які дозволять тобі виділитися серед інших і
+                    стати справжнім професіоналом у 3D текстуруванні.
+                  </p>
+                </div>
+                <div class="cource__wrapper-btn">
+                  <a class="cource__btn btn-primary" href="#">
+                    Дізнатись більше
+                  </a>
+                  <a class="cource__btn btn-transparent" href="#">
+                    Почати навчання
+                  </a>
+                </div>
               </div>
-              <div class="course__wrapper-btn">
-                <a class="course__btn course__btn--disable" href="#">
-                  Скоро буде...
-                </a>
+            </div>
+            <div class="our-cources__item cource cource--character">
+              <div class="cource__wrapper cource__wrapper--character">
+                <div class="cource__content">
+                  <h3 class="cource__heading">3D Artist: character</h3>
+                  <p class="cource__for">Для загартованих</p>
+                  <p class="cource__description">
+                    Навчись мистецтву створювати незабутніх персонажів. Курс
+                    допоможе тобі опанувати навички стилізованого моделювання.
+                  </p>
+                </div>
+                <div class="cource__wrapper-btn">
+                  <a class="cource__btn btn-disabled" href="#">
+                    Скоро буде...
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="who-is">
-        <div class="container">
-          <h2>хто такий 3D artist</h2>
+      <section class="who-is section">
+        <div class="container who-is__container">
+          <h2 class="section__heading section__heading--dark">
+            хто такий 3D artist
+          </h2>
           <div class="who-is__description-wrapper">
-            <p>
+            <p class="section__description section__description--dark">
               3D Artist — творець віртуальних світів. Від фантастичних
               персонажів до реалістичних об’єктів, саме 3D художник втілює ідеї
               в цифрову реальність. Завдяки майстерності текстурування,
               моделювання та візуалізації, він вдихає життя у набір полігонів та
               пікселів.
             </p>
-            <p>
+            <p class="section__description section__description--dark">
               Освоївши цю спеціальність, ти зможеш працювати як у геймдеві, так
               і у кіноіндустрії або рекламі. 3D Artist — це високооплачувана
               професія, що має високий попит в ігровій індустрії. Проте вимагає
@@ -216,120 +224,268 @@
               допомогти 😊
             </p>
           </div>
-          <div class="who-is__wrapper who-is__border">
-            <div class="who-is__advantage">
-              <img
-                class="who-is__image-icon"
-                src="./image/img-icon/3D_icon.png"
-                alt="top 2"
-              />
-              <div class="who-is__content">
-                <h3>top 2</h3>
-                <p>
-                  Design та Artist найбільш затребувані професії в індустрії
-                </p>
-              </div>
-            </div>
-            <div class="who-is__diagram">diagram</div>
-          </div>
           <div class="who-is__wrapper">
-            <div class="who-is__border who-is__advantage">
-              <img
-                class="who-is__image-icon"
-                src="./image/img-icon/3D_moneda.png"
-                alt="salary $16000"
-              />
-              <div class="who-is__content">
-                <h3>ЗП до 16,000$</h3>
-                <p>середньомісячний оклад у 3D Artist</p>
+            <div class="who-is__line who-is__border">
+              <div class="who-is__advantage">
+                <img
+                  class="who-is__image-icon"
+                  src="./image/img-icon/3D_icon.png"
+                  alt="top 2"
+                />
+                <div class="who-is__content">
+                  <h3 class="who-is__content-heading">top 2</h3>
+                  <p class="who-is__content-text">
+                    Design та Artist найбільш затребувані професії в індустрії
+                  </p>
+                </div>
+              </div>
+              <div class="who-is__diagram who-is__advantage">
+                <canvas
+                  id="myChart"
+                  style="width: 100%; max-width: 600px; height: 123px"
+                ></canvas>
               </div>
             </div>
-            <div class="who-is__border who-is__advantage">
-              <img
-                class="who-is__image-icon"
-                src="./image/img-icon/3D_calendar.png"
-                alt="1000+ vacansy"
-              />
-              <div class="who-is__content">
-                <h3>1000+ вакансій</h3>
-                <p>50+ із можливістю працювати віддалено</p>
+            <div class="who-is__line">
+              <div class="who-is__border who-is__advantage">
+                <img
+                  class="who-is__image-icon"
+                  src="./image/img-icon/3D_moneda.png"
+                  alt="salary $16000"
+                />
+                <div class="who-is__content">
+                  <h3 class="who-is__content-heading">ЗП до 16,000$</h3>
+                  <p class="who-is__content-text">
+                    середньомісячний оклад у 3D Artist
+                  </p>
+                </div>
+              </div>
+              <div class="who-is__border who-is__advantage">
+                <img
+                  class="who-is__image-icon"
+                  src="./image/img-icon/3D_calendar.png"
+                  alt="1000+ vacansy"
+                />
+                <div class="who-is__content">
+                  <h3 class="who-is__content-heading">1000+ вакансій</h3>
+                  <p class="who-is__content-text">
+                    50+ із можливістю працювати віддалено
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <p class="note">
+          <p class="who-is__note">
             * за даними indeed.com та glassdoor.com на липень 2024 року.
           </p>
         </div>
       </section>
-      <section class="price price--dark">
+      <section class="price price--dark section">
         <div class="container">
-          <h2>Обери що тобі підходить</h2>
+          <h2
+            class="section__heading section__heading--light section__heading--only-heading"
+          >
+            Обери що тобі підходить
+          </h2>
           <div class="price__wrapper">
-            <div class="price__item">
-              <img
-                src="./image/image/sell-blade.png"
-                alt="3D Artist: modelling"
-              />
-              <h3>3D Artist: modelling</h3>
-              <p>• Для початківців</p>
-              <div class="">
-                <p>ціна:</p>
-                <p><span>$</span>99</p>
+            <div class="price__item price-card">
+              <span class="price-card__badge price-card__badge--gray">
+                популярний
+              </span>
+              <div class="price-card__image">
+                <img
+                  class="price-card__img"
+                  src="./image/image/sell-blade.png"
+                  alt="3D Artist: modelling"
+                />
               </div>
-              <button type="button">Купити курс</button>
-              <div class="what-you-will">
-                <h4>Що ти отримаєш:</h4>
-                <div>
+              <div class="price-card__content price-card__header">
+                <h3 class="price-card__heading">3D Artist: modelling</h3>
+                <p class="price-card__for">• Для початківців</p>
+              </div>
+              <div class="price-card__sale-wrapper">
+                <p class="price-card__sale-text">ціна:</p>
+                <p class="price-card__sale-summ">
+                  <span class="price-card__sale-currency">$</span>
+                  99
+                </p>
+              </div>
+              <div class="price-card__content price-card__content--top">
+                <button class="price-card__btn btn-transparent" type="button">
+                  Купити курс
+                </button>
+              </div>
+              <div class="price-card__what-you-will price-card__content">
+                <h4 class="price-card__you-will-heading">Що ти отримаєш:</h4>
+                <div class="price-card__you-will-items">
                   <p>10 модулів</p>
                   <p>3 теми</p>
                 </div>
               </div>
-              <ul class="list-will">
-                <li class="item">1 МОДЕЛЬ ЗБРОЇ (меч)</li>
-                <li class="item">Передзаписаний курс на 3 години</li>
-                <li class="item">Особлива роль у дискорді</li>
-                <li class="item">назавжди залишається доступ до курсу</li>
+              <ul
+                class="price-card__list-will price-card__content price-card__content--bottom"
+              >
+                <li class="price-card__list-item">1 МОДЕЛЬ ЗБРОЇ (меч)</li>
+                <li class="price-card__list-item">
+                  Передзаписаний курс на 3 години
+                </li>
+                <li class="price-card__list-item">Особлива роль у дискорді</li>
+                <li class="price-card__list-item">
+                  назавжди залишається доступ до курсу
+                </li>
+              </ul>
+            </div>
+            <div class="price__item price-card">
+              <div class="price-card__image">
+                <img
+                  class="price-card__img"
+                  src="./image/image/sell-magic.png"
+                  alt="3D Artist: modelling"
+                />
+              </div>
+              <div class="price-card__content price-card__header">
+                <h3 class="price-card__heading">3D Artist: texturing</h3>
+                <p class="price-card__for">• Для загартованих</p>
+              </div>
+              <div class="price-card__sale-wrapper">
+                <p class="price-card__sale-text">ціна:</p>
+                <p class="price-card__sale-summ">
+                  <span class="price-card__sale-currency">$</span>
+                  123
+                </p>
+              </div>
+              <div class="price-card__content price-card__content--top">
+                <button class="price-card__btn btn-transparent" type="button">
+                  Купити курс
+                </button>
+              </div>
+              <div class="price-card__what-you-will price-card__content">
+                <h4 class="price-card__you-will-heading">Що ти отримаєш:</h4>
+                <div class="price-card__you-will-items">
+                  <p>12 модулів</p>
+                  <p>6 теми</p>
+                </div>
+              </div>
+              <ul
+                class="price-card__list-will price-card__content price-card__content--bottom"
+              >
+                <li class="price-card__list-item">1 МОДЕЛЬ ЗБРОЇ (ЩИТ)</li>
+                <li class="price-card__list-item">
+                  Передзаписаний курс на 2 години
+                </li>
+                <li class="price-card__list-item">Особлива роль у дискорді</li>
+                <li class="price-card__list-item">
+                  назавжди залишається доступ до курсу
+                </li>
+              </ul>
+            </div>
+            <div class="price__item price-card price-card--special">
+              <span class="price-card__badge price-card__badge--special">
+                Спеціальна ціна
+              </span>
+              <div class="price-card__image">
+                <img
+                  class="price-card__img"
+                  src="./image/image/sell-full.png"
+                  alt="3D Artist: full pack"
+                />
+              </div>
+              <div class="price-card__content price-card__header">
+                <h3 class="price-card__heading">3D Artist: full pack</h3>
+                <p class="price-card__for">
+                  • повний курс по моделінгу і текстурингу
+                </p>
+              </div>
+              <div
+                class="price-card__sale-wrapper price-card__sale-wrapper--special"
+              >
+                <p class="price-card__sale-text">ціна:</p>
+                <p class="price-card__sale-summ">
+                  <span class="price-card__sale-currency">$</span>
+                  159
+                </p>
+                <span class="price-card__sale-old">$200</span>
+              </div>
+              <div class="price-card__content price-card__content--top">
+                <button class="price-card__btn btn-primary" type="button">
+                  Купити курс
+                </button>
+              </div>
+              <div class="price-card__what-you-will price-card__content">
+                <h4 class="price-card__you-will-heading">Що ти отримаєш:</h4>
+                <div class="price-card__you-will-items">
+                  <p>22 модулів</p>
+                  <p>9 теми</p>
+                </div>
+              </div>
+              <ul
+                class="price-card__list-will price-card__content price-card__content--bottom"
+              >
+                <li class="price-card__list-item">2 МОДЕЛі ЗБРОЇ (меч+ЩИТ)</li>
+                <li class="price-card__list-item">
+                  Передзаписаний курс на 5 години
+                </li>
+                <li class="price-card__list-item">Особлива роль у дискорді</li>
+                <li class="price-card__list-item">
+                  назавжди залишається доступ до курсу
+                </li>
               </ul>
             </div>
           </div>
           <div class="advantages">
-            <div class="advantage">
+            <div class="advantages__item">
               <img
                 src="./image/img-icon/3D_star.png"
                 alt="Понад 1200 учасників"
               />
               <div class="advantages__content">
-                <h3>Понад 1200 учасників</h3>
-                <p>приєднались до нашої спільноти в Discord</p>
+                <h3 class="advantages__content-heading">
+                  Понад 1200 учасників
+                </h3>
+                <p class="advantages__content-text">
+                  приєднались до нашої спільноти в Discord
+                </p>
               </div>
             </div>
-            <div class="advantage">
+            <div class="advantages__item">
               <img
                 src="./image/img-icon/3D_clock.png"
                 alt="+30 учнів у VSQUAD School"
               />
               <div class="advantages__content">
-                <h3>+30 учнів у VSQUAD School</h3>
-                <p>успішно завершили курс і задоволені результатами</p>
+                <h3 class="advantages__content-heading">
+                  +30 учнів у VSQUAD School
+                </h3>
+                <p class="advantages__content-text">
+                  успішно завершили курс і задоволені результатами
+                </p>
               </div>
             </div>
-            <div class="advantage">
+            <div class="advantages__item">
               <img
                 src="./image/img-icon/3D_moneda.png"
                 alt="Заробітна Плата до 16,000$"
               />
               <div class="advantages__content">
-                <h3>Заробітна Плата до 16,000$</h3>
-                <p>у 3D Artist за даними indeed.com на липень 2024</p>
+                <h3 class="advantages__content-heading">
+                  Заробітна Плата до 16,000$
+                </h3>
+                <p class="advantages__content-text">
+                  у 3D Artist за даними indeed.com на липень 2024
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="faq">
+      <section class="faq section">
         <div class="container">
-          <h2>Часті питання</h2>
-          <p>Знайдіть відповіді на найактуальніші запитання про наш курс:</p>
+          <h2 class="section__heading section__heading--light">
+            Часті питання
+          </h2>
+          <p class="section__description section__description--light">
+            Знайдіть відповіді на найактуальніші запитання про наш курс:
+          </p>
 
           <div class="faq__wrapper">
             <div>
@@ -405,10 +561,14 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts section">
         <div class="container">
           <div class="contacts__heading-wrapper">
-            <h2>ОТРИМАТИ КОНСУЛЬТАЦІЮ</h2>
+            <h2
+              class="section__heading section__heading--dark section__heading--only-heading"
+            >
+              ОТРИМАТИ КОНСУЛЬТАЦІЮ
+            </h2>
             <a href="mailto@head@vsquad.art">
               <svg class="" width="24px" height="24px">
                 <use href="./image/sprite.svg#icon-email"></use>
@@ -570,5 +730,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="./js/chart.js"></script>
   </body>
 </html>

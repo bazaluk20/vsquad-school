@@ -1,19 +1,45 @@
+$colors: (
+  'color-brand-primary': #2280cd,
+  'color-brand-secondary': #3e94da,
+  'color-white': #ffffff,
+  'color-dark': #18171c,
+  'color-medium-dark': #272528,
+  'color-light-description': #cccccc,
+  'color-light': #fafafa,
+  'color-secondary-dark': #3e3c40,
+  'color-decor': #1468ad,
+  'color-light-dark': #737373,
+  'color-policy-text': #5b5b5b,
+  'color-disabled': #b4b4b4,
+  'color-shadow-blade': #1eff00,
+  'color-shadow-magic': #64219e,
+  'color-badge-gray': #b4b4b4,
+);
+
+/*
+  --color-light-description: #ccc; //// #d1d1d2 
+  --color-light: #fafafa; //// #fcfcfc // #f3f3f3 // #fbfafa ////
+*/
+
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+@function coloring($name, $opacity: false) {
+  @if $opacity {
+    @return rgba(var(--#{unquote($name)}--rgb), $opacity);
+  } @else {
+    @return var(--#{unquote($name)});
+  }
+}
+
 :root {
-  --color-brand-primary: #2280cd;
-  --color-brand-secondary: #3e94da;
-  --color-white: #fff;
-  --color-dark: #18171c;
-
-  --color-medium-dark: #272528;
-  --color-light-description: #ccc; /* #d1d1d2 */
-  --color-light: #fafafa; /* #fcfcfc // #f3f3f3 // #fbfafa */
-
-  --color-secondary-dark: #3e3c40;
-  --color-decor: #1468ad;
-
-  --color-light-dark: #737373;
-
-  --color-policy-text: #5b5b5b;
+  @if $colors {
+    @each $key, $value in $colors {
+      --#{$key}: #{$value};
+      --#{$key}--rgb: #{HexToRGB($value)};
+    }
+  }
 }
 
 $bp-mobile: 480px;

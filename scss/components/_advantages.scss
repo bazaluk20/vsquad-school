@@ -1,0 +1,31 @@
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 32px;
+  padding-top: 40px;
+  border-top: 1px solid coloring(color-policy-text);
+
+  &__item {
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  &__content-heading {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: coloring(color-white);
+    margin-bottom: 12px;
+  }
+  &__content-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: coloring(color-light-description);
+    margin-bottom: 0;
+  }
+}

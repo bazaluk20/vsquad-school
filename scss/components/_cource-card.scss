@@ -1,0 +1,120 @@
+.cource {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+
+  height: 686px;
+
+  background-size: cover;
+  background-position: center;
+
+  &--modelling {
+    background-image: url(../image/image/cources-blade.png);
+  }
+  &--texturing {
+    background-image: url(/image/image/cources-magic.png);
+  }
+  &--character {
+    background-image: url(/image/image/cources-boss.png);
+  }
+
+  &__wrapper {
+    position: relative;
+    width: calc(100% - 0.95px);
+    height: calc(100% - 1px);
+    padding: 32px 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 36%;
+      left: 80px;
+      width: 10%;
+      height: 30%;
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    &--modelling {
+      &::before {
+        background-color: coloring(color-shadow-blade, 0.15);
+        box-shadow: 0 0 141px 150px coloring(color-shadow-blade, 0.15);
+      }
+    }
+    &--texturing {
+      &::before {
+        background-color: coloring(color-shadow-magic, 0.5);
+        box-shadow: 0 0 141px 150px coloring(color-shadow-magic, 0.5);
+      }
+    }
+    &--character {
+      &::before {
+        background-color: coloring(color-shadow-magic, 0.5);
+        box-shadow: 0 0 141px 150px coloring(color-shadow-magic, 0.5);
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      background: linear-gradient(
+        225deg,
+        transparent 30px,
+        coloring(color-dark) 0
+      );
+      opacity: 0.7;
+      filter: drop-shadow(1px -1px 0 coloring(color-secondary-dark));
+      border-bottom: 1px solid coloring(color-secondary-dark);
+      border-left: 1px solid coloring(color-secondary-dark);
+      border-radius: 4px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+  }
+  &__heading {
+    font-family: 'IRON MAN';
+    font-size: 72px;
+    line-height: 1;
+    letter-spacing: 3px;
+    color: coloring(color-brand-secondary);
+    margin-bottom: 10px;
+  }
+  &__for {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 3px;
+    color: coloring(color-light);
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__description {
+    color: coloring(color-light-description);
+  }
+
+  &__wrapper-btn {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__btn {
+    padding: 14px 32px;
+  }
+}

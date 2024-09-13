@@ -1,0 +1,16 @@
+.our-cources {
+  background-image: url(../image/image/bg-pixel.png);
+  background-repeat: repeat;
+  background-size: contain;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: self-start;
+  }
+
+  &__item {
+    flex-basis: calc((100% - 24px) / 3);
+  }
+}

@@ -1,0 +1,12 @@
+.price {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    padding-bottom: 40px;
+  }
+  &__item {
+    flex-basis: calc((100% - 24px) / 3);
+  }
+}
