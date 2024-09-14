@@ -1,0 +1,52 @@
+.footer {
+  padding: 40px 0;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  &__logo {
+    width: 102px;
+    margin-bottom: 16px;
+  }
+  &__copy {
+    font-size: 14px;
+    color: coloring(color-light-description);
+    margin-bottom: 0;
+  }
+
+  &__nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  &__link-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: coloring(color-white);
+  }
+  &__link-icon {
+    fill: coloring(color-white);
+  }
+
+  &__social-icon {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+}

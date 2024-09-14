@@ -1,0 +1,100 @@
+.contacts {
+  position: relative;
+  background-color: coloring(color-light);
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/image/bg-pixel-white.png);
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  &__container {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__heading-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  &__heading {
+    margin-bottom: 0;
+  }
+
+  &__heading-email {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    color: coloring(color-dark);
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
+  }
+  &__content-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+
+  &__form {
+    background-color: coloring(color-light);
+    border: 1px solid coloring(color-light-description);
+    border-radius: 4px;
+    padding: 40px;
+  }
+  &__curator {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+  }
+  &__curator-img {
+    border-radius: 4px;
+  }
+  &__curator-names {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__curator-name {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 3px;
+    color: coloring(color-dark);
+    margin-bottom: 0;
+  }
+  &__curator-specialty {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: coloring(color-policy-text);
+    margin-bottom: 0;
+  }
+  &__curator-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 14px 32px;
+  }
+  &__curator-icon {
+    fill: coloring(color-white);
+  }
+}

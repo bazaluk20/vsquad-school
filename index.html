@@ -50,51 +50,56 @@
               </ul>
             </div>
           </div>
-          <nav class="header__navmenu">
-            <ul class="header__navmenu-list">
-              <li class="header__navmenu-item">
-                <a href="/" class="link">Школа</a>
-              </li>
-              <li class="header__navmenu-item dropdown">
-                <a href="#" class="dropdown__link link">⭐ Курси</a>
-                <ul class="dropdown__list">
-                  <li class="dropdown__item">
-                    <a href="#" class="link">3D Artist: texturing</a>
-                  </li>
-                  <li class="dropdown__item">
-                    <a href="#" class="link">3D Artist: Modelling</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="header__navmenu-item">
-                <a href="#" class="link">Реєстрація</a>
-              </li>
-              <li class="header__navmenu-item">
-                <a href="#" class="link">Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__social-icon">
-            <a href="#" class="social">
-              <svg class="social__icons" width="24px" height="24px">
-                <use href="./image/sprite.svg#icon-email"></use>
-              </svg>
-            </a>
-            <a href="#" class="social">
-              <svg class="social__icons" width="24px" height="24px">
-                <use href="./image/sprite.svg#icon-discord"></use>
-              </svg>
-            </a>
-            <a href="#" class="social">
-              <svg class="social__icons" width="24px" height="24px">
-                <use href="./image/sprite.svg#icon-whatsapp"></use>
-              </svg>
-            </a>
-            <a href="#" class="social">
-              <svg class="social__icons" width="24px" height="24px">
-                <use href="./image/sprite.svg#icon-telegram"></use>
-              </svg>
-            </a>
+          <button class="header__burger" type="button">
+            <span class="header__burger--line"></span>
+          </button>
+          <div class="header__nav-wrapper">
+            <nav class="header__navmenu">
+              <ul class="header__navmenu-list">
+                <li class="header__navmenu-item">
+                  <a href="/" class="link">Школа</a>
+                </li>
+                <li class="header__navmenu-item dropdown">
+                  <a href="#" class="dropdown__link link">⭐ Курси</a>
+                  <ul class="dropdown__list">
+                    <li class="dropdown__item">
+                      <a href="#" class="link">3D Artist: texturing</a>
+                    </li>
+                    <li class="dropdown__item">
+                      <a href="#" class="link">3D Artist: Modelling</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="header__navmenu-item">
+                  <a href="#" class="link">Реєстрація</a>
+                </li>
+                <li class="header__navmenu-item">
+                  <a href="#" class="link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__social-icon">
+              <a href="#" class="social">
+                <svg class="social__icons" width="24px" height="24px">
+                  <use href="./image/sprite.svg#icon-email"></use>
+                </svg>
+              </a>
+              <a href="#" class="social">
+                <svg class="social__icons" width="24px" height="24px">
+                  <use href="./image/sprite.svg#icon-discord"></use>
+                </svg>
+              </a>
+              <a href="#" class="social">
+                <svg class="social__icons" width="24px" height="24px">
+                  <use href="./image/sprite.svg#icon-whatsapp"></use>
+                </svg>
+              </a>
+              <a href="#" class="social">
+                <svg class="social__icons" width="24px" height="24px">
+                  <use href="./image/sprite.svg#icon-telegram"></use>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -488,11 +493,12 @@
           </p>
 
           <div class="faq__wrapper">
-            <div>
-              <button type="button" class="faq__accordion">
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
                 Які навички потрібні для проходження курсів?
+                <span class="accordion__icon"></span>
               </button>
-              <div class="faq__panel">
+              <div class="accordionText accordion__panel">
                 <p>
                   Наші курси підходять як для новачків, так і для просунутих
                   митців. ми навчаємо основам, І в той же час розкриваємо
@@ -501,11 +507,12 @@
               </div>
             </div>
 
-            <div>
-              <button type="button" class="faq__accordion">
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
                 Яка потрібна техніка для проходження курсу?
+                <span class="accordion__icon"></span>
               </button>
-              <div class="faq__panel">
+              <div class="accordionText accordion__panel">
                 <p>
                   Всі уроки записані у відео-форматі. Тож ти можеш їх
                   переглядати з будь-якого зручного для тебе пристрою.
@@ -516,11 +523,12 @@
               </div>
             </div>
 
-            <div>
-              <button type="button" class="faq__accordion">
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
                 як я можу отримати спеціальну роль у дискорді?
+                <span class="accordion__icon"></span>
               </button>
-              <div class="faq__panel">
+              <div class="accordionText accordion__panel">
                 <p>
                   звернися до куратора школи у дискорді. Необхідно буде
                   підтвердити свою пошту.
@@ -528,11 +536,12 @@
               </div>
             </div>
 
-            <div>
-              <button type="button" class="faq__accordion">
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
                 не проходить оплата, що робити?
+                <span class="accordion__icon"></span>
               </button>
-              <div class="faq__panel">
+              <div class="accordionText accordion__panel">
                 <p>
                   Ми працюємо над альтернативними способами оплати. Наразі
                   спробуй не використовувати Google Pay або Apple Pay. Або
@@ -541,20 +550,22 @@
               </div>
             </div>
 
-            <div>
-              <button type="button" class="faq__accordion">
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
                 Чи будуть доступні матеріали після закінчення курсу?
+                <span class="accordion__icon"></span>
               </button>
-              <div class="faq__panel">
+              <div class="accordionText accordion__panel">
                 <p>Так. ти отримаєш довічний доступ до матеріалів курсу.</p>
               </div>
             </div>
 
-            <div>
-              <button type="button" class="faq__accordion">
+            <div class="accordion">
+              <button type="button" class="accordionBtn accordion__title">
                 ЯКОЮ МОВОЮ БУДЕ навчання?
+                <span class="accordion__icon"></span>
               </button>
-              <div class="faq__panel">
+              <div class="accordionText accordion__panel">
                 <p>основні мови: українська та англійська.</p>
               </div>
             </div>
@@ -562,14 +573,14 @@
         </div>
       </section>
       <section class="contacts section">
-        <div class="container">
+        <div class="container contacts__container">
           <div class="contacts__heading-wrapper">
             <h2
-              class="section__heading section__heading--dark section__heading--only-heading"
+              class="contacts__heading section__heading section__heading--dark"
             >
               ОТРИМАТИ КОНСУЛЬТАЦІЮ
             </h2>
-            <a href="mailto@head@vsquad.art">
+            <a class="contacts__heading-email" href="mailto@head@vsquad.art">
               <svg class="" width="24px" height="24px">
                 <use href="./image/sprite.svg#icon-email"></use>
               </svg>
@@ -577,10 +588,15 @@
             </a>
           </div>
           <div class="contacts__content">
-            <form action="" method="post" class="contacts__form form">
+            <form
+              action=""
+              method="post"
+              class="contacts__content-item contacts__form form"
+            >
               <div class="form__field">
-                <label for="name">Ім’я</label>
+                <label class="form__label" for="name">Ім’я</label>
                 <input
+                  class="form__input"
                   type="text"
                   name="name"
                   id="name"
@@ -588,8 +604,9 @@
                 />
               </div>
               <div class="form__field">
-                <label for="email">Email</label>
+                <label class="form__label" for="email">Email</label>
                 <input
+                  class="form__input"
                   type="email"
                   name="email"
                   id="email"
@@ -597,8 +614,11 @@
                 />
               </div>
               <div class="form__field">
-                <label for="phone">Номер телефону (optional)</label>
+                <label class="form__label" for="phone"
+                  >Номер телефону (optional)</label
+                >
                 <input
+                  class="form__input"
                   type="tel"
                   name="phone"
                   id="phone"
@@ -607,29 +627,36 @@
               </div>
               <div class="form__privacy">
                 <input
-                  class=""
+                  class="form__checkbox-input visually-hidden"
                   type="checkbox"
                   id="checkbox-terms"
                   name="checkbox-terms"
                 />
-                <label class="" for="checkbox-terms">
-                  Я даю згоду на обробку моїх персональних даних, наданих у
-                  формі вище, відповідно до Політики конфіденційності VSQUAD і
-                  Політики файлів cookie
+                <label class="form__checkbox-label" for="checkbox-terms">
+                  <span>
+                    Я даю згоду на обробку моїх персональних даних, наданих у
+                    формі вище, відповідно до
+                    <a href="#">Політики конфіденційності</a> VSQUAD і
+                    <a href="#">Політики файлів cookie</a>
+                  </span>
                 </label>
               </div>
-              <div class="form__btn">
-                <button type="submit">Надіслати</button>
-              </div>
+              <button class="form__btn btn-transparent" type="submit">
+                Надіслати
+              </button>
             </form>
-            <div class="contacts__curator">
-              <img src="./image/image/contacts-cat.jpg" alt="МАКСИМ КИСІЛЬ" />
-              <div class="contacts__curator-name">
-                <h3>МАКСИМ КИСІЛЬ</h3>
-                <p>КУРАТОР КУРСУ</p>
+            <div class="contacts__content-item contacts__curator">
+              <img
+                class="contacts__curator-img"
+                src="./image/image/contacts-cat.jpg"
+                alt="МАКСИМ КИСІЛЬ"
+              />
+              <div class="contacts__curator-names">
+                <h3 class="contacts__curator-name">МАКСИМ КИСІЛЬ</h3>
+                <p class="contacts__curator-specialty">КУРАТОР КУРСУ</p>
               </div>
-              <a class="contacts__curator-link" href="#">
-                <svg class="" width="24px" height="24px">
+              <a class="contacts__curator-link btn-primary" href="#">
+                <svg class="contacts__curator-icon" width="24px" height="24px">
                   <use href="./image/sprite.svg#icon-discord"></use>
                 </svg>
                 Запитати в Discord
@@ -640,25 +667,28 @@
       </section>
       <section class="subscribe">
         <div class="container">
-          <div class="subscribe__content">
-            <h2>Приєднуйтесь до нашої розсилки</h2>
-            <p>
-              Підпишіться на наші щотижневі оновлення та першими дізнавайтесь
-              про наші спеціальні пропозиції та акції!
-            </p>
-          </div>
-          <div class="subscribe__form">
-            <form action="" method="post">
-              <label class="visually-hidden" for="subscribe-email"
-                >Електронна пошта</label
-              >
+          <div class="subscribe__wrapper">
+            <div class="subscribe__content">
+              <h2 class="subscribe__heading">Приєднуйтесь до нашої розсилки</h2>
+              <p class="subscribe__text">
+                Підпишіться на наші щотижневі оновлення та першими дізнавайтесь
+                про наші спеціальні пропозиції та акції!
+              </p>
+            </div>
+            <form class="subscribe__form" action="" method="post">
+              <label class="visually-hidden" for="subscribe-email">
+                Електронна пошта
+              </label>
               <input
+                class="subscribe__form-input"
                 type="email"
                 name="subscribe-email"
                 id="subscribe-email"
                 placeholder="Введіть ваш email"
               />
-              <button type="submit">Підписатись</button>
+              <button class="subscribe__form-btn btn-primary" type="submit">
+                Підписатись
+              </button>
             </form>
           </div>
         </div>
@@ -668,10 +698,10 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__logo-copy">
-            <a href="/">
+            <a class="footer__logo" href="/">
               <img src="./image/Logo_White.svg" alt="VSQUAD School" />
             </a>
-            <p>
+            <p class="footer__copy">
               &copy; 2024 VSQUAD School.
               <br />
               Усі права захищено.
@@ -682,28 +712,25 @@
               <li class="footer__list-item">
                 <a href="#" class="link">Політика конфіденційності</a>
               </li>
+              <li class="separator">/</li>
               <li class="footer__list-item">
                 <a href="#" class="link">Договір публічної оферти</a>
               </li>
             </ul>
           </nav>
           <div class="footer__contacts">
-            <p>
-              <a href="tel:+380501112233">
-                <svg class="" width="24px" height="24px">
-                  <use href="./image/sprite.svg#icon-phone"></use>
-                </svg>
-                +38(050)-111-22-33
-              </a>
-            </p>
-            <p>
-              <a href="mailto@head@vsquad.art">
-                <svg class="" width="24px" height="24px">
-                  <use href="./image/sprite.svg#icon-email"></use>
-                </svg>
-                head@vsquad.art
-              </a>
-            </p>
+            <a class="footer__link-contact" href="tel:+380501112233">
+              <svg class="footer__link-icon" width="24px" height="24px">
+                <use href="./image/sprite.svg#icon-phone"></use>
+              </svg>
+              +38(050)-111-22-33
+            </a>
+            <a class="footer__link-contact" href="mailto@head@vsquad.art">
+              <svg class="footer__link-icon" width="24px" height="24px">
+                <use href="./image/sprite.svg#icon-email"></use>
+              </svg>
+              head@vsquad.art
+            </a>
             <div class="footer__social-icon">
               <a href="#" class="social">
                 <svg class="social__icons" width="24px" height="24px">
@@ -732,5 +759,6 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="./js/chart.js"></script>
+    <script src="./js/accordion.js"></script>
   </body>
 </html>
