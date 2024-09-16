@@ -1,11 +1,20 @@
 .footer {
-  padding: 40px 0;
+  padding: 24px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 40px 0;
+  }
 
   &__content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 32px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
   }
 
   &__logo {
@@ -23,6 +32,19 @@
     justify-content: center;
     align-items: flex-start;
     gap: 16px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
+
+    & .separator {
+      display: none;
+
+      @media screen and (min-width: $bp-tablet) {
+        display: block;
+      }
+    }
   }
 
   &__contacts {

@@ -8,9 +8,18 @@
     justify-content: space-between;
     gap: 24px;
     align-items: self-start;
+    flex-wrap: wrap;
   }
 
   &__item {
-    flex-basis: calc((100% - 24px) / 3);
+    flex-basis: 100%;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: calc((100% - 24px) / 2);
+    }
+
+    @media screen and (min-width: $bp-desctop) {
+      flex-basis: calc((100% - 48px) / 3);
+    }
   }
 }

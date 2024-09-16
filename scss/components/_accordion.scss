@@ -1,6 +1,10 @@
 .accordion {
   border-bottom: 1px solid coloring(color-secondary-dark);
-  padding-bottom: 40px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding-bottom: 40px;
+  }
 
   &__title {
     position: relative;
@@ -15,8 +19,12 @@
     padding: 0;
     margin-bottom: 0;
     text-transform: uppercase;
-    padding-right: 48px;
+    padding-right: 38px;
     transition: margin 0.25s;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-right: 48px;
+    }
 
     &.active {
       margin-bottom: 6px;
@@ -33,7 +41,7 @@
     width: 28px;
     height: 28px;
     right: 0;
-    top: calc((100% - 28px) / 2);
+    top: 4px;
 
     &::before,
     &::after {
@@ -62,7 +70,11 @@
     max-height: 0;
     overflow: hidden;
     transition: all 0.25s;
-    padding-right: 100px;
+    padding-right: 20px;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding-right: 100px;
+    }
   }
   &__panel > *:last-child {
     margin-bottom: 0;

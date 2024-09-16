@@ -6,19 +6,17 @@
   position: relative;
   overflow: hidden;
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(
-      94.33% 172.85% at 23.26% 100%,
-      coloring(color-dark) 0%,
-      coloring(color-dark, 0.5) 100%
-    );
+  & .container {
+    background-image: url(../image/image/bg-pixel.png);
+    background-repeat: repeat;
+    background-size: contain;
+
+    @media screen and (min-width: $bp-desctop) {
+      background-image: none;
+    }
   }
+
+  &::before,
   &::after {
     content: '';
     position: absolute;
@@ -26,6 +24,15 @@
     z-index: 0;
     width: 100%;
     height: 100%;
+  }
+  &::before {
+    background: radial-gradient(
+      94.33% 172.85% at 23.26% 100%,
+      coloring(color-dark) 0%,
+      coloring(color-dark, 0.5) 100%
+    );
+  }
+  &::after {
     background: radial-gradient(
       94.33% 172.85% at 23.26% 100%,
       coloring(color-dark, 0.8) 0%,
@@ -37,95 +44,101 @@
   &__content {
     position: relative;
     z-index: 1;
-    border-left: 1px solid coloring(color-medium-dark);
-    border-right: 1px solid coloring(color-medium-dark);
-    padding-top: 64px;
-    padding-bottom: 100px;
+    padding-top: 77px;
+    padding-bottom: 64px;
 
-    &::before {
-      content: '';
+    @media screen and (min-width: $bp-desctop) {
+      border-left: 1px solid coloring(color-medium-dark);
       border-right: 1px solid coloring(color-medium-dark);
-      position: absolute;
-      z-index: -1;
-      height: 50%;
-      width: 50%;
-      left: 0;
-      top: 0;
+      padding-top: 64px;
+      padding-bottom: 100px;
+
+      &::before {
+        content: '';
+        border-right: 1px solid coloring(color-medium-dark);
+        position: absolute;
+        z-index: -1;
+        height: 50%;
+        width: 50%;
+        left: 0;
+        top: 0;
+      }
     }
   }
 
   &__heading {
     font-family: 'IRON MAN';
-    margin: 0 auto 68px;
-    display: block;
-    max-width: 1074px;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 2px;
     text-align: center;
-    letter-spacing: 6px;
-    font-size: 180px;
-    line-height: 160px;
     text-transform: uppercase;
+    display: block;
     color: coloring(color-brand-primary);
+    margin: 0 auto 68px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 180px;
+      line-height: 160px;
+      max-width: 1074px;
+      letter-spacing: 6px;
+    }
   }
 
   &__wrapper {
     position: relative;
-    background-image: url(../image/image/bg-pixel-white.png);
-    background-size: contain;
-    background-repeat: repeat;
-    border-top: 1px solid coloring(color-medium-dark);
-    border-bottom: 1px solid coloring(color-medium-dark);
-    padding: 496px 40px 40px;
+    padding: 460px 0 0;
 
-    background: linear-gradient(
-      118.83deg,
-      coloring(color-white, 0.01) 0%,
-      coloring(color-white, 0.05) 100%
-    );
+    @media screen and (min-width: $bp-desctop) {
+      background-image: url(../image/image/bg-pixel-white.png);
+      background-size: contain;
+      background-repeat: repeat;
+      border-top: 1px solid coloring(color-medium-dark);
+      border-bottom: 1px solid coloring(color-medium-dark);
+      padding: 496px 40px 40px;
 
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      background-color: coloring(color-medium-dark);
-      transform: rotate(45deg);
-    }
-    &::before {
-      top: -4px;
-      left: -4px;
-    }
-    &::after {
-      top: -4px;
-      right: -4px;
+      background: linear-gradient(
+        118.83deg,
+        coloring(color-white, 0.01) 0%,
+        coloring(color-white, 0.05) 100%
+      );
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background-color: coloring(color-medium-dark);
+        transform: rotate(45deg);
+      }
+      &::before {
+        top: -4px;
+        left: -4px;
+      }
+      &::after {
+        top: -4px;
+        right: -4px;
+      }
     }
   }
+
   &__image {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    margin: -270px -110px 0;
-    width: calc(100% + 110px * 2);
+    margin: -150px -290px 0;
+    width: calc(100% + 290px * 2);
     max-width: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: -270px -110px 0;
+      width: calc(100% + 110px * 2);
+    }
   }
   &__description {
-    &::after {
-      content: '';
-      position: absolute;
-      width: 205px;
-      max-width: 25%;
-      height: 6px;
-      background: linear-gradient(
-        170deg,
-        transparent 6px,
-        coloring(color-decor, 0.7) 0
-      );
-      bottom: -1px;
-      right: -1px;
-    }
-
-    padding: 40px 48px;
+    padding: 48px 16px 40px;
     background-color: coloring(color-medium-dark);
     border-radius: 1px;
     background: linear-gradient(
@@ -138,9 +151,32 @@
     border-right: 1px solid coloring(color-secondary-dark);
     box-shadow: 12px 30px 20px 0px #00000026;
 
+    @media screen and (min-width: $bp-desctop) {
+      padding: 40px 48px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 205px;
+      height: 6px;
+      background: linear-gradient(
+        170deg,
+        transparent 6px,
+        coloring(color-decor, 0.7) 0
+      );
+      bottom: -1px;
+      right: -1px;
+    }
+
     &__image {
-      width: 136px;
-      margin-bottom: 24px;
+      display: none;
+
+      @media screen and (min-width: $bp-desctop) {
+        display: block;
+        width: 136px;
+        margin-bottom: 24px;
+      }
     }
     &__heading {
       font-family: 'Roboto Condensed', sans-serif;
@@ -148,17 +184,34 @@
       font-size: 32px;
       text-transform: uppercase;
       margin-bottom: 8px;
-      letter-spacing: 5px;
+      letter-spacing: 2px;
       color: coloring(color-white);
+
+      @media screen and (min-width: $bp-desctop) {
+        letter-spacing: 5px;
+      }
     }
     &__text {
-      font-size: 20px;
+      font-size: 14px;
       color: coloring(color-light-description);
-      margin-bottom: 24px;
+      margin-bottom: 8px;
+
+      @media screen and (min-width: $bp-desctop) {
+        font-size: 20px;
+        margin-bottom: 24px;
+      }
     }
   }
 
   &__btn {
-    padding: 14px 50px;
+    display: block;
+    width: 100%;
+    padding: 14px;
+
+    @media screen and (min-width: $bp-desctop) {
+      padding: 14px 50px;
+      display: inline-block;
+      width: auto;
+    }
   }
 }

@@ -24,7 +24,13 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 24px;
+    gap: 16px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      gap: 24px;
+      flex-direction: row;
+    }
   }
 
   &__wrapper {
@@ -37,8 +43,13 @@
   &__line {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 24px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+    }
   }
 
   &__border {
@@ -50,9 +61,16 @@
 
   &__advantage {
     display: flex;
-    align-items: center;
-    gap: 32px;
-    flex-basis: calc(100% - 24px);
+    align-items: flex-start;
+    gap: 16px;
+    flex-basis: calc((100% - 24px) / 2);
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desctop) {
+      gap: 32px;
+      align-items: center;
+      flex-direction: row;
+    }
   }
   &__content-heading {
     font-family: 'Roboto Condensed', sans-serif;

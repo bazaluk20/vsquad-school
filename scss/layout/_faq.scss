@@ -1,7 +1,9 @@
 .faq {
-  background-image: url(../image/image/bg-pixel.png);
-  background-repeat: repeat;
-  background-size: contain;
+  @media screen and (min-width: $bp-tablet) {
+    background-image: url(../image/image/bg-pixel.png);
+    background-repeat: repeat;
+    background-size: contain;
+  }
 
   &__wrapper {
     display: flex;
