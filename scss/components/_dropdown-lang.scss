@@ -1,4 +1,4 @@
-.dropdown {
+.dropdown-lang {
   position: relative;
 
   &__link {
@@ -11,11 +11,6 @@
 
     &.active {
       color: coloring(color-brand-primary);
-      margin-bottom: 24px;
-
-      @media screen and (min-width: $bp-desctop) {
-        margin-bottom: 0;
-      }
 
       &::after {
         transform: rotate(180deg);
@@ -24,45 +19,34 @@
   }
 
   &__list {
-    position: relative;
+    position: absolute;
+    top: 130%;
     height: 0;
     overflow: hidden;
-    transition: height 0.25s;
+    z-index: 4;
+    background-color: coloring(color-light);
+    width: auto;
+    border-radius: 2px;
+    box-shadow: 0px 0px 15px 0px coloring(color-dark, 0.12);
 
-    @media screen and (min-width: $bp-desctop) {
-      position: absolute;
-      top: 130%;
-      z-index: 3;
-      background-color: coloring(color-light);
-      width: auto;
-      border-radius: 2px;
-      box-shadow: 0px 0px 15px 0px coloring(color-dark, 0.12);
-
-      &--nav {
-        min-width: 260px;
-      }
+    &--nav {
+      min-width: 260px;
     }
   }
 
   &__item {
     padding: 8px;
+    border-bottom: 1px solid coloring(color-light-description);
+    &:last-child {
+      border-bottom: none;
+    }
 
     @media screen and (min-width: $bp-desctop) {
       padding: 16px 8px;
-      border-bottom: 1px solid coloring(color-light-description);
-
-      &:last-child {
-        border-bottom: none;
-      }
     }
   }
 
   &__item-link {
-    color: coloring(color-white);
-    text-align: center;
-
-    @media screen and (min-width: $bp-desctop) {
-      color: coloring(color-dark);
-    }
+    color: coloring(color-dark);
   }
 }

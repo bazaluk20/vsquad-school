@@ -1,7 +1,18 @@
 .social {
   display: flex;
 
+  @media screen and (max-width: $bp-desctop) {
+    border-radius: 50%;
+    background-color: coloring(color-white);
+    box-shadow: 0px 0px 12px 0px #2280cde5;
+    padding: 8px;
+  }
+
   &__icons {
-    fill: coloring(color-white);
+    fill: coloring(color-dark);
+
+    @media screen and (min-width: $bp-desctop) {
+      fill: coloring(color-white);
+    }
   }
 }

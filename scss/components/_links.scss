@@ -17,20 +17,32 @@
   color: coloring(color-brand-primary);
 }
 
-.link::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 3px;
-  bottom: -3px;
-  left: 0;
-  background-color: coloring(color-brand-primary);
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+@media screen and (min-width: $bp-desctop) {
+  .link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: -3px;
+    left: 0;
+    background-color: coloring(color-brand-primary);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .link:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }
 
-.link:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+.link-disabled,
+.link-disabled:hover {
+  color: coloring(color-light-dark) !important;
+  cursor: not-allowed;
+
+  &::before {
+    content: none;
+  }
 }
