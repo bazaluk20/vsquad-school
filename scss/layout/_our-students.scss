@@ -1,0 +1,19 @@
+.our-students {
+  position: relative;
+  background-color: coloring(color-light);
+  background-image: url(../image/image/bg-pixel-white.png);
+  background-repeat: repeat;
+  background-size: contain;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__slider {
+    overflow: hidden;
+  }
+
+  &__slider-list {
+    margin-bottom: 40px;
+  }
+}

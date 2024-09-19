@@ -25,3 +25,35 @@
   border: 1px solid coloring(color-light-dark);
   cursor: not-allowed;
 }
+
+.carousel-button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  top: calc((100% - 30px) / 2);
+  z-index: 2;
+
+  &.prev {
+    left: -12px;
+    @media screen and (min-width: $bp-tablet) {
+      left: -60px;
+    }
+  }
+
+  &.next {
+    transform: rotate(180deg);
+    right: -12px;
+
+    @media screen and (min-width: $bp-tablet) {
+      right: -60px;
+    }
+  }
+}
+
+.carousel-button .carousel-arrow {
+  fill: coloring(color-white);
+
+  @media screen and (min-width: $bp-tablet) {
+    fill: coloring(color-light-dark);
+  }
+}

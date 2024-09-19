@@ -1,0 +1,40 @@
+.programms {
+  &__heading-block {
+    @media screen and (min-width: $bp-desctop) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+  }
+
+  &__heading-content {
+    @media screen and (min-width: $bp-desctop) {
+      flex-basis: 50%;
+    }
+  }
+
+  &__heading-count {
+    display: none;
+
+    @media screen and (min-width: $bp-desctop) {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+
+      & p {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 3px;
+        color: coloring(color-policy-text);
+        border: 1px solid coloring(color-policy-text);
+        border-radius: 5px 0 5px 0;
+        padding: 6px 12px;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+}

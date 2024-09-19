@@ -1,0 +1,98 @@
+.student-card {
+  position: relative;
+  background-color: coloring(color-medium-dark);
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 200px;
+    background: linear-gradient(
+      250deg,
+      transparent 6px,
+      rgba(var(--color-decor--rgb), 0.7) 0
+    );
+    bottom: -1px;
+    left: -1px;
+  }
+
+  &__content {
+    padding: 24px 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 61%;
+      padding: 24px 64px;
+    }
+  }
+  &__heading {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: coloring(color-white);
+    margin-bottom: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 32px;
+      line-height: 1.25;
+      margin-bottom: 40px;
+    }
+  }
+  &__name-social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: flex-start;
+    }
+  }
+  &__name {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: coloring(color-white);
+    margin-bottom: 0;
+
+    text-decoration: underline;
+  }
+  &__social {
+    display: flex;
+  }
+  &__social-icon {
+    fill: coloring(color-brand-secondary);
+  }
+  &__speciality {
+    color: coloring(color-light-description);
+    margin-bottom: 0;
+  }
+
+  &__video {
+    position: relative;
+
+    @media screen and (min-width: $bp-tablet) {
+      flex-basis: 39%;
+      border-left: 1px solid coloring(color-secondary-dark);
+    }
+  }
+  &__video-btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    top: calc((100% - 100px) / 2);
+    left: calc((100% - 100px) / 2);
+  }
+  &__video-btn-icon {
+    fill: coloring(color-white);
+  }
+}

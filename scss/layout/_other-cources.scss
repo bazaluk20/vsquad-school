@@ -1,0 +1,17 @@
+.other-cources {
+  background-image: url(../image/image/bg-pixel.png);
+  background-repeat: repeat;
+  background-size: contain;
+
+  &__content {
+    position: relative;
+  }
+
+  &__slider {
+    overflow: hidden;
+  }
+
+  &__slider-list {
+    margin-bottom: 40px;
+  }
+}

@@ -36,6 +36,10 @@
     }
   }
 
+  &__title-element {
+    color: coloring(color-brand-primary);
+  }
+
   &__icon {
     position: absolute;
     width: 28px;

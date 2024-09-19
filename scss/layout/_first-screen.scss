@@ -1,5 +1,4 @@
 .first-screen {
-  background-image: url('../image/image/first-screen-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -88px;
@@ -66,6 +65,22 @@
     }
   }
 
+  &__top-line-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    color: coloring(color-white);
+    margin-bottom: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 28px;
+    }
+  }
+
   &__heading {
     font-family: 'IRON MAN';
     font-size: 80px;
@@ -121,6 +136,102 @@
         right: -4px;
       }
     }
+
+    &--not-home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 24px;
+      padding: 0;
+
+      @media screen and (min-width: $bp-tablet) {
+        flex-direction: row;
+      }
+
+      .first-screen__wrapper-content {
+        @media screen and (min-width: $bp-tablet) {
+          padding: 40px 0 40px 40px;
+        }
+
+        @media screen and (min-width: $bp-desctop) {
+          flex-basis: 524px;
+          flex-shrink: 0;
+        }
+      }
+      .first-screen__heading {
+        font-size: 70px;
+        line-height: 1;
+        letter-spacing: 3px;
+        margin-bottom: 8px;
+
+        @media screen and (min-width: $bp-tablet) {
+          font-size: 80px;
+          line-height: 0.9;
+          letter-spacing: 5px;
+        }
+
+        @media screen and (min-width: $bp-desctop) {
+          font-size: 120px;
+          line-height: 0.9;
+        }
+      }
+      .first-screen__heading-desc {
+        font-size: 20px;
+        color: coloring(color-light-description);
+      }
+
+      .first-screen__wrapper-image {
+        position: relative;
+
+        &::before,
+        &::after {
+          content: '';
+          position: absolute;
+          width: 50px;
+          height: 100px;
+          border-radius: 50%;
+          z-index: -1;
+        }
+        &--texturing {
+          &::before {
+            top: 45%;
+            right: 60%;
+            background-color: coloring(color-brand-primary, 0.25);
+            box-shadow: 0 0 150px 150px coloring(color-brand-primary, 0.25);
+          }
+          &::after {
+            left: 60%;
+            bottom: 45%;
+            background-color: coloring(color-shadow-magic, 0.25);
+            box-shadow: 0 0 150px 150px coloring(color-shadow-magic, 0.25);
+          }
+        }
+
+        &--modelling {
+          &::before {
+            top: 20%;
+            right: 10%;
+            background-color: rgba(106, 139, 116, 0.2);
+            box-shadow: 0 0 150px 150px rgba(106, 139, 116, 0.2);
+          }
+          &::after {
+            left: 35%;
+            bottom: 25%;
+            background-color: rgba(125, 65, 46, 0.15);
+            box-shadow: 0 0 150px 150px rgba(125, 65, 46, 0.15);
+          }
+        }
+      }
+    }
+  }
+
+  &__wrapper-description {
+    padding: 24px 0 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 64px 40px 0;
+    }
   }
 
   &__image {
@@ -137,6 +248,36 @@
       width: calc(100% + 110px * 2);
     }
   }
+
+  &__heading-before-description {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    color: coloring(color-white);
+    text-align: center;
+
+    @media screen and (min-width: $bp-desctop) {
+      font-size: 32px;
+      text-align: left;
+      letter-spacing: 5px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__descriptions {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 24px;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-desctop) {
+      flex-direction: row;
+    }
+  }
+
   &__description {
     padding: 48px 16px 40px;
     background-color: coloring(color-medium-dark);
@@ -152,7 +293,7 @@
     box-shadow: 12px 30px 20px 0px #00000026;
 
     @media screen and (min-width: $bp-desctop) {
-      padding: 40px 48px;
+      padding: 40px 32px;
     }
 
     &::after {
@@ -199,6 +340,33 @@
       @media screen and (min-width: $bp-desctop) {
         font-size: 20px;
         margin-bottom: 24px;
+      }
+    }
+
+    &__wrapper-text {
+      @media screen and (min-width: $bp-desctop) {
+        display: flex;
+        gap: 24px;
+      }
+
+      & p {
+        font-size: 14px;
+        color: coloring(color-light-description);
+
+        &:last-child {
+          // display: none;
+          margin-bottom: 0;
+        }
+
+        @media screen and (min-width: $bp-desctop) {
+          font-size: 18px;
+          margin-bottom: 0;
+          flex-basis: calc((100% - 24px) / 2);
+
+          &:first-child {
+            flex-basis: 100%;
+          }
+        }
       }
     }
   }

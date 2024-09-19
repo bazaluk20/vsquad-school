@@ -11,7 +11,7 @@
       <div class="container">
         <div class="header__content">
           <div class="header__logo-lang">
-            <a class="header__logo" href="/">
+            <a class="header__logo" href="./index.html">
               <img src="./image/Logo_White.svg" alt="VSQUAD School" />
             </a>
             <div class="header__lang dropdown-lang dropdown">
@@ -60,7 +60,7 @@
             <nav class="header__navmenu">
               <ul class="header__navmenu-list">
                 <li class="header__navmenu-item">
-                  <a href="/" class="link">Школа</a>
+                  <a href="./index.html" class="link">Школа</a>
                 </li>
                 <li class="header__navmenu-item dropdown">
                   <a href="#" class="dropdown__link link ddBtn">⭐ Курси</a>
@@ -95,7 +95,7 @@
                   <a href="#" class="link">Реєстрація</a>
                 </li>
                 <li class="header__navmenu-item">
-                  <a href="#" class="link">Контакти</a>
+                  <a href="#contacts" class="link">Контакти</a>
                 </li>
                 <li
                   class="header__navmenu-item header__navmenu-item--mobile-item"
@@ -110,9 +110,9 @@
                 <li
                   class="header__navmenu-item header__navmenu-item--mobile-item"
                 >
-                  <button class="header__navmenu-btn btn-primary" type="button">
+                  <a class="header__navmenu-btn btn-primary" href="#pricing">
                     Почати навчання
-                  </button>
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -143,7 +143,12 @@
       </div>
     </header>
     <main>
-      <section class="first-screen">
+      <section
+        class="first-screen"
+        style="
+          background-image: url('../image/image/first-screen-background.jpg');
+        "
+      >
         <div class="container">
           <div class="first-screen__content">
             <h1 class="first-screen__heading">game Art online school</h1>
@@ -169,14 +174,15 @@
                   Досвідчені художники можуть здобути нові навички та підвищити
                   свій професійний рівень у нових напрямках.
                 </p>
-                <button class="first-screen__btn btn-primary" type="button">
+                <a class="first-screen__btn btn-primary" href="#pricing">
                   Почати навчання
-                </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="our-cources section">
         <div class="container">
           <h2 class="section__heading section__heading--light">НАШІ КУРСИ</h2>
@@ -197,10 +203,10 @@
                   </p>
                 </div>
                 <div class="cource__wrapper-btn">
-                  <a class="cource__btn btn-primary" href="#">
+                  <a class="cource__btn btn-primary" href="./modelling.html">
                     Дізнатись більше
                   </a>
-                  <a class="cource__btn btn-transparent" href="#">
+                  <a class="cource__btn btn-transparent" href="#pricing">
                     Почати навчання
                   </a>
                 </div>
@@ -217,10 +223,10 @@
                   </p>
                 </div>
                 <div class="cource__wrapper-btn">
-                  <a class="cource__btn btn-primary" href="#">
+                  <a class="cource__btn btn-primary" href="./texturing.html">
                     Дізнатись більше
                   </a>
-                  <a class="cource__btn btn-transparent" href="#">
+                  <a class="cource__btn btn-transparent" href="#pricing">
                     Почати навчання
                   </a>
                 </div>
@@ -246,6 +252,7 @@
           </div>
         </div>
       </section>
+
       <section class="who-is section">
         <div class="container who-is__container">
           <h2 class="section__heading section__heading--dark">
@@ -323,7 +330,8 @@
           </p>
         </div>
       </section>
-      <section class="price price--dark section">
+
+      <section id="pricing" class="price price--dark section">
         <div class="container">
           <h2
             class="section__heading section__heading--light section__heading--only-heading"
@@ -521,6 +529,7 @@
           </div>
         </div>
       </section>
+
       <section class="faq section">
         <div class="container">
           <h2 class="section__heading section__heading--light">
@@ -610,7 +619,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts section">
+      <section id="contacts" class="contacts section">
         <div class="container contacts__container">
           <div class="contacts__heading-wrapper">
             <h2
@@ -736,7 +745,7 @@
       <div class="container">
         <div class="footer__content">
           <div class="footer__logo-copy">
-            <a class="footer__logo" href="/">
+            <a class="footer__logo" href="./index.html">
               <img src="./image/Logo_White.svg" alt="VSQUAD School" />
             </a>
             <p class="footer__copy">
