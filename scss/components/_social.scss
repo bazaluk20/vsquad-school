@@ -1,6 +1,12 @@
 .social {
   display: flex;
 
+  &:hover {
+    .social__icons {
+      fill: coloring(color-brand-secondary);
+    }
+  }
+
   @media screen and (max-width: $bp-desctop) {
     border-radius: 50%;
     background-color: coloring(color-white);
@@ -10,6 +16,7 @@
 
   &__icons {
     fill: coloring(color-dark);
+    transition: fill 0.25s;
 
     @media screen and (min-width: $bp-desctop) {
       fill: coloring(color-white);

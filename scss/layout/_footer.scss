@@ -61,6 +61,11 @@
     font-size: 16px;
     line-height: 1.2;
     color: coloring(color-white);
+    transition: color 0.25s;
+
+    &:hover {
+      color: coloring(color-brand-secondary);
+    }
   }
   &__link-icon {
     fill: coloring(color-white);

@@ -6,6 +6,7 @@
   font-weight: 700;
   font-size: 16px;
   border-radius: 4px;
+  transition: color 0.25s, background 0.25s;
 }
 .btn-primary {
   color: coloring(color-white);
@@ -17,6 +18,15 @@
   color: coloring(color-brand-primary);
   border: 1px solid coloring(color-brand-primary);
   background-color: coloring(color-brand-primary, 0.15);
+}
+
+.btn-primary,
+.btn-transparent {
+  &:hover {
+    color: coloring(color-white);
+    background-color: coloring(color-brand-secondary);
+    border: 1px solid coloring(color-brand-secondary);
+  }
 }
 
 .btn-disabled {
