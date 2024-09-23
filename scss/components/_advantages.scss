@@ -29,6 +29,7 @@
       align-items: flex-start;
       gap: 24px;
       flex-direction: row;
+      flex-basis: calc((100% - 48px) / 3);
     }
   }
   &__content-heading {
